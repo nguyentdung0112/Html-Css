@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2</title>
+    <link rel="stylesheet" href="/13-07/page-2.css">
+</head>
+<body>
+    <main>
+        <h1>Course registration</h1>
+        <form action="/13-07/index.html" >
+            <div class="father" >
+                <input type="text" required placeholder="Fullname" maxlength="30"pattern="^(\w\w+)\s(\w+)$" >
+            </div>
+            <div class="father">
+                <input type="email"required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email">
+            </div>
+            <div class="father">
+                <input type="number"required minlength="10" maxlength="11" placeholder="Phone number">
+            </div>
+            <div class="father">
+                <select required name="course" id="course">
+                    <option value="" disabled="disabled" selected>Select Course</option>
+                    <option value="Toan">Toan</option>
+                    <option value="Tieng Viet">Tieng Viet</option>
+                    <option value="Am Nhac">Am Nhac</option>
+                    <option value="Vat Ly">Vat Ly</option>
+                  </select>
+            </div>
+            <div class="father">
+                <textarea required placeholder="Note" minlength="10" maxlength="200"></textarea >
+            </div>
+            <div class="father">
+                <button class="button-42" role="button">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
